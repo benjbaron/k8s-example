@@ -1,0 +1,4 @@
+FROM python
+RUN pip install redis
+COPY ./producer.py /producer.py
+COPY ./rediswq.py /rediswq.py

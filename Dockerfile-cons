@@ -1,0 +1,6 @@
+FROM python
+RUN pip install redis
+COPY ./consumer.py /consumer.py
+COPY ./rediswq.py /rediswq.py
+
+CMD  python consumer.py
